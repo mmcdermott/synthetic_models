@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synthetic_models"
+version = "0.0.1"
+authors = [
+  { name="Matthew McDermott", email="mattmcdermott8@gmail.com" },
+]
+description = "Utilities for sampling scores and labels at given performance constraints."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["scikit-learn", "scipy", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pre-commit"]
+tests = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/mmcdermott/synthetic_models"
+Issues = "https://github.com/mmcdermott/synthetic_models/issues"
